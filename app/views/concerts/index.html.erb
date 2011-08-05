@@ -1,28 +1,15 @@
-<h1>Listing concerts</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Artist</th>
-    <th>Repertoire</th>
-    <th>Date</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h2>Concert List</h2>
 
 <% @concerts.each do |concert| %>
-  <tr>
-    <td><%= concert.title %></td>
-    <td><%= concert.artist %></td>
-    <td><%= concert.repertoire %></td>
-    <td><%= concert.date %></td>
-    <td><%= link_to 'Show', concert %></td>
-    <td><%= link_to 'Edit', edit_concert_path(concert) %></td>
-    <td><%= link_to 'Destroy', concert, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  
+    <h3><%=link_to concert.title, concert %></h3>
+    <p><%= concert.artist %></p>
+    <p><%= concert.date %></p>
+    <ul>  
+      <li><%= link_to 'Edit', edit_concert_path(concert) %></li>
+      <li><%= link_to 'Destroy', concert, :confirm => 'Are you sure?', :method => :delete %></li>
+    </ul>
 <% end %>
-</table>
 
 <br />
 

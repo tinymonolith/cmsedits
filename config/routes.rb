@@ -1,5 +1,7 @@
 Cmsedits::Application.routes.draw do
   resources :concerts
+  
+  root :to => "concerts#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
