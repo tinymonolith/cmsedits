@@ -25,7 +25,8 @@
   </div>
   <div class="field">
     <%= f.label :date %><br />
-    <%= f.datetime_select :date %>
+    <%= f.datetime_select :date,
+                          :prompt => true %>
   </div>
   <div class="actions">
     <%= f.submit %>
