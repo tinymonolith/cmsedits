@@ -1,4 +1,8 @@
 Cmsedits::Application.routes.draw do
+  resources :repertoires
+
+  resources :artists
+
   resources :concerts
   
   root :to => "concerts#index"

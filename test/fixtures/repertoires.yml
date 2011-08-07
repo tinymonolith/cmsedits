@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  composer: MyString
+  title: MyString
+  audio_file_name: MyString
+  audio_content_type: MyString
+  audio_file_size: 
+
+two:
+  composer: MyString
+  title: MyString
+  audio_file_name: MyString
+  audio_content_type: MyString
+  audio_file_size: 

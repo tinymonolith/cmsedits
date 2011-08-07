@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Composer:</b>
+  <%= @repertoire.composer %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @repertoire.title %>
+</p>
+
+<p>
+  <b>Audio file name:</b>
+  <%= @repertoire.audio_file_name %>
+</p>
+
+<p>
+  <b>Audio content type:</b>
+  <%= @repertoire.audio_content_type %>
+</p>
+
+<p>
+  <b>Audio file size:</b>
+  <%= @repertoire.audio_file_size %>
+</p>
+<p>
+  <b><%= link_to "Download", @repertoire.audio.url %></b>
+</p>
+
+
+<%= link_to 'Edit', edit_repertoire_path(@repertoire) %> |
+<%= link_to 'Back', repertoires_path %>

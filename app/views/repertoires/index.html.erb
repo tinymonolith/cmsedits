@@ -1,0 +1,31 @@
+<h1>Listing repertoires</h1>
+
+<table>
+  <tr>
+    <th>Composer</th>
+    <th>Title</th>
+    <th>Audio file name</th>
+    <th>Audio content type</th>
+    <th>Audio file size</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @repertoires.each do |repertoire| %>
+  <tr>
+    <td><%= repertoire.composer %></td>
+    <td><%= repertoire.title %></td>
+    <td><%= repertoire.audio_file_name %></td>
+    <td><%= repertoire.audio_content_type %></td>
+    <td><%= repertoire.audio_file_size %></td>
+    <td><%= link_to 'Show', repertoire %></td>
+    <td><%= link_to 'Edit', edit_repertoire_path(repertoire) %></td>
+    <td><%= link_to 'Destroy', repertoire, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Repertoire', new_repertoire_path %>

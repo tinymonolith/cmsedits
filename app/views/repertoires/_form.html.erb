@@ -1,0 +1,29 @@
+<%= form_for(@repertoire , :html => { :multipart => true }) do |f| %>
+  <% if @repertoire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@repertoire.errors.count, "error") %> prohibited this repertoire from being saved:</h2>
+
+      <ul>
+      <% @repertoire.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :composer %><br />
+    <%= f.text_field :composer %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :audio %><br />
+    <%= f.file_field :audio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

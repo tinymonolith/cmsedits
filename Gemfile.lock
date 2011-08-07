@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: deeb0edd27400a229ff42d75c7d48d01839573a5
+  specs:
+    paperclip (2.3.16)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+      cocaine (>= 0.0.2)
+      mime-types
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -30,6 +40,7 @@ GEM
     activesupport (3.0.9)
     arel (2.0.10)
     builder (2.1.2)
+    cocaine (0.1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.0)
@@ -40,7 +51,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mysql2 (0.2.11)
-    paperclip (2.3.0)
     polyglot (0.3.2)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -74,5 +84,5 @@ PLATFORMS
 
 DEPENDENCIES
   mysql2 (~> 0.2.6)
-  paperclip (= 2.3)
+  paperclip!
   rails (= 3.0.9)
